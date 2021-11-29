@@ -39,7 +39,7 @@ public abstract class Employe {
 
     public abstract Double getPrimeAnnuelle();
 
-    public void augmenterSalaire(Double pourcentage) {
+    public void augmenterSalaire(Double pourcentage) throws Exception {
         this.salaire = this.getSalaire() * (1 + pourcentage);
     }
 
